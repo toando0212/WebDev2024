@@ -10,7 +10,7 @@ Students are expected to:
 Student Info
 =======================
 
-* Name: *YourNameHere*
-* ID: *YourIdHere*
-* Group ID: *Your Group ID here*
-* Project Name: *Your Project Name here*
+* Name: Do Duy Toan
+* ID: 22BI13420
+* Group ID: 18
+* Project Name: Multi-Page Business Website
