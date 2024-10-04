@@ -13,4 +13,4 @@ Student Info
 * Name: Do Duy Toan
 * ID: 22BI13420
 * Group ID: 18
-* Project Name: Multi-Page Business Website
+* Project Name: News Aggregator Website
