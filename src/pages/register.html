@@ -4,8 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Account</title>
+    <link rel="stylesheet" href="/WebDev2024/src/assets/css/register.css">
 </head>
 <body>
+    <div>
+        <div class="logo">
+            <h1><a href="main.html">News Aggregator</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <div class="register">
+            <h2>Create Your Own Account</h2>
+            <form class="register-form">
+                <label>Email:</label>
+                <input type="text" id="username" required>
+                
+                <label>Password:</label>
+                <input type="password" id="password" required>
+
+                <label>Confirm Password:</label>
+                <input type="password" id="confirm-password" required>
+                
+                <button type="submit">Create Account</button>
+            </form>
+        </div>
+    </div>
     
+    <footer>
+        <p>&copy; 2024 News Aggregator. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+<script src="/WebDev2024/src/assets/js/validation.js"></script>
