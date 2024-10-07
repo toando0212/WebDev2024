@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Aggregator - Account</title>
+    <link rel="stylesheet" href="/WebDev2024/src/assets/css/account.css">
+</head>
+
+<body>
+    <div>
+        <div class="logo">
+            <h1><a href="main.html">News Aggregator</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <div class="login">
+            <h2>Login to Your Account</h2>
+            <form class="login-form">
+                <label>Email:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label>Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <div class="create-account">
+        <p>Don't have an account?</p>
+        <button onclick="window.location.href='register.html'">Create Account</button>
+    </div>
+    <footer>
+        <p>&copy; 2024 News Aggregator. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+<script src="/WebDev2024/src/assets/js/validation.js"></script>
