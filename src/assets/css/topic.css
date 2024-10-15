@@ -4,3 +4,140 @@
     color: inherit;       
 }
 
+/* topic.css - CSS cho các trang chủ đề tin tức */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+div {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Logo Section */
+.logo h1 {
+    font-family: 'Times New Roman', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000;
+}
+
+.logo a:hover {
+    color: #007BFF;
+}
+
+/* Navigation Menu */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #fff;
+    padding: 10px 0;
+    border-bottom: 2px solid #333;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+/* Main Content */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* News Articles Section */
+.news-article {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.news-article img {
+    width: 150px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.news-article h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.news-article a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.news-article a:hover {
+    color: #007BFF;
+}
+
+.news-article p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    border-top: 2px solid #333;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .news-article {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .news-article img {
+        margin-bottom: 10px;
+    }
+}
