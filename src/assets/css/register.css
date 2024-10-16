@@ -1,122 +1,129 @@
-/* Reset default browser styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body and overall styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
     background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
 }
 
-/* Logo Section */
-.logo {
+
+.header {
+    display: flex;
+    align-items: center;
     background-color: #333;
+    margin-top: 0px;
+    justify-content: space-between;
+}
+
+
+.logo h1 a {
     color: white;
-    text-align: center;
-    padding: 15px 0;
+    text-decoration: none;
+    font-size: 25px;
 }
 
 .logo h1 a {
-    text-decoration: none;
     color: white;
-    font-size: 2em;
-    text-transform: uppercase;
+    text-decoration: none;
 }
 
-/* Navigation Menu */
-nav {
-    background-color: #444;
-    text-align: center;
-    padding: 10px 0;
-}
 
 nav ul {
-    list-style: none;
+    display: flex;
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 0 15px;
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 nav ul li a {
-    text-decoration: none;
     color: white;
-    font-size: 1em;
-    padding: 8px 15px;
-    transition: background-color 0.3s;
+    font-size: 16px;
+    text-decoration: none;
 }
 
 nav ul li a:hover {
-    background-color: #3498db;
-    border-radius: 3px;
+    color: #ffcc00;
 }
 
-/* Main Article Section */
-main {
-    width: 75%;
-    margin: 20px auto;
+
+
+.register {
+    width: 400px;
+    margin: 50px auto;
     background-color: white;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 10px; 
 }
 
-/* Article heading */
-h2 {
-    font-size: 1.8em; /* Giảm kích thước tiêu đề */
-    margin-bottom: 10px;
-    color: #2c3e50;
+.register h2 {
     text-align: center;
-    border-bottom: 1px solid #3498db;
-    padding-bottom: 8px;
-}
-
-/* Smaller image */
-img {
-    width: 50%; /* Giảm chiều rộng của hình ảnh xuống 50% */
-    height: auto;
-    margin: 15px auto; /* Căn giữa hình ảnh */
-    display: block;
-    border-radius: 8px;
-}
-
-/* Article content */
-p {
-    font-size: 1em; /* Giảm kích thước chữ xuống 1em để cân đối với hình ảnh */
     margin-bottom: 20px;
-    line-height: 1.5;
-    text-align: justify;
+}
+
+.register-form label {
+    display: block;
+    color: black;
+}
+
+.register-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.register-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.register-form button:hover {
+    background-color: #ffcc00;
+}
+
+
+.login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login p {
+    font-size: 14px;
     color: #555;
 }
 
-/* Footer Section */
-footer {
+.login button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color: #ffcc00;
+}
+
+.footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 15px 0;
-    margin-top: 30px;
-    border-top: 1px solid #3498db;
-}
-
-footer p {
-    font-size: 0.9em;
-}
-
-/* Extra styling for links and hover effects */
-a {
-    text-decoration: none;
-    color: #3498db;
-}
-
-a:hover {
-    color: #2c3e50;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }

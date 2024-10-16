@@ -7,15 +7,13 @@
     <link rel="stylesheet" href="/WebDev2024/src/assets/css/register.css">
 </head>
 <body>
-    <div>
+    <div class="header">
         <div class="logo">
             <h1><a href="main.html">News Aggregator</a></h1>
         </div>
         <nav>
             <ul>
                 <li><a href="main.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
                 <li><a href="account.html">Account</a></li>
             </ul>
         </nav>
@@ -25,7 +23,7 @@
             <h2>Create Your Own Account</h2>
             <form class="register-form">
                 <label>Email:</label>
-                <input type="text" id="username" required>
+                <input type="text" id="email" required>
                 
                 <label>Password:</label>
                 <input type="password" id="password" required>
@@ -37,10 +35,15 @@
             </form>
         </div>
     </div>
+    <div class="login">
+        <p>Already have an account?</p>
+        <Button onclick="window.location.href='account.html'">Login</Button>
+    </div>
     
-    <footer>
-        <p>&copy; 2024 News Aggregator. All rights reserved.</p>
-    </footer>
+    <div class="footer">
+        <p>&copy; 2077 News Aggregator. All rights reserved.</p>
+    </div>
+    
+    <script src="/WebDev2024/src/assets/js/validation_register.js"></script>
 </body>
 </html>
-<script src="/WebDev2024/src/assets/js/validation.js"></script>

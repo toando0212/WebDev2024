@@ -1,166 +1,160 @@
-
-.logo a {
-    text-decoration: none; 
-    color: inherit;       
-}
-
-/* main.css */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    background-color: #f4f4f4;
 }
 
-div {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Logo Section */
-.logo h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.logo a {
+.logo h1 a {
+    color: white;
     text-decoration: none;
-    color: #333;
+    font-size: 25px;
 }
 
-.logo a:hover {
-    color: #007BFF;
-}
 
 /* Navigation Menu */
 nav ul {
     display: flex;
-    justify-content: space-around;
-    list-style: none;
-    background-color: #333;
-    padding: 15px 0;
-    margin-bottom: 30px;
 }
 
 nav ul li {
-    margin: 0 15px;
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 nav ul li a {
-    text-decoration: none;
     color: white;
-    font-size: 1.2rem;
+    font-size: 16px;
+    text-decoration: none;
 }
 
 nav ul li a:hover {
-    color: #007BFF;
+    color: #ffcc00;
 }
 
-/* Welcome Section */
-h2 {
-    font-size: 2rem;
+.welcome {
+    text-align: center; 
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin-left: 0;
+}
+
+
+.topics {
+    background-color: #f4f4f4;
+    height: 100%;
+    margin-left: -20px; 
+    position: relative;
+}
+
+.topics h2 {
+    font-size: 30px;
     margin-bottom: 15px;
 }
 
-p {
-    font-size: 1.1rem;
+.topics ul {
+    list-style-type: none;
+}
+
+.topics ul li {
+    margin-bottom: 10px;
+}
+
+.topics ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #333;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.topics ul li a:hover {
+    background-color: #ffcc00;
+    color: white;
+}
+
+/* Latest News Section - Align right */
+.latest-news {
+    border-radius: 8px;
+}
+
+.latest-news h2 {
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
-/* Topics Section */
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
 
-ul li {
-    margin-bottom: 10px;
-}
-
-ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 1.2rem;
-}
-
-ul li a:hover {
-    color: #007BFF;
-}
-
-/* News Article Section */
 .news-article {
     display: flex;
-    align-items: flex-start;
-    margin-bottom: 30px;
+    align-items: flex-start; 
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
 }
 
+
 .news-article img {
-    max-width: 200px;
-    height: auto;
+    width: 200px; 
+    height: 120px;
+    object-fit: cover; /* Đảm bảo ảnh vừa khít vào khung mà không bị méo */
+    border-radius: 8px;
     margin-right: 20px;
+    flex-shrink: 0; /* Ngăn hình ảnh bị co khi nội dung nhiều hơn */
+}
+
+.news-article-content {
+    flex-grow: 1; /* Đảm bảo phần nội dung chiếm hết khoảng trống còn lại */
 }
 
 .news-article h3 {
-    font-size: 1.5rem;
+    font-size: 25px;
     margin-bottom: 10px;
+    margin-top: 0; /* Đảm bảo title bắt đầu thẳng hàng */
+    line-height: 1.2;
 }
 
 .news-article a {
     text-decoration: none;
     color: #333;
+    transition: color 0.3s ease;
 }
 
 .news-article a:hover {
-    color: #007BFF;
+    color: #ffcc00;
 }
 
 .news-article p {
     font-size: 1rem;
     color: #666;
+    line-height: 1.6;
+    margin-top: 5px;
+    margin-bottom: 0; /* Đảm bảo không có khoảng trống không cần thiết dưới description */
+    display: -webkit-box; /* Giới hạn dòng mô tả */
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-/* Footer */
-footer {
+.footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 15px 0;
-    position: relative;
+    padding: 5px;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
-
-footer p {
-    margin: 0;
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    .news-article {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .news-article img {
-        margin-bottom: 10px;
-    }
-}
-
-

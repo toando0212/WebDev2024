@@ -8,25 +8,26 @@
 </head>
 
 <body>
-    <div>
+    
+    <div class="header">
         <div class="logo">
             <h1><a href="main.html">News Aggregator</a></h1>
         </div>
         <nav>
             <ul>
                 <li><a href="main.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
                 <li><a href="account.html">Account</a></li>
             </ul>
         </nav>
     </div>
+
+    
     <div>
         <div class="login">
             <h2>Login to Your Account</h2>
             <form class="login-form">
                 <label>Email:</label>
-                <input type="text" id="username" required>
+                <input type="text" id="email" required>
                 
                 <label>Password:</label>
                 <input type="password" id="password" required>
@@ -35,13 +36,18 @@
             </form>
         </div>
     </div>
+
+    
     <div class="create-account">
         <p>Don't have an account?</p>
         <button onclick="window.location.href='register.html'">Create Account</button>
     </div>
-    <footer>
-        <p>&copy; 2024 News Aggregator. All rights reserved.</p>
-    </footer>
+
+   
+    <div class="footer">
+        <p>&copy; 2077 News Aggregator. All rights reserved.</p>
+    </div>
+
+    <script src="/WebDev2024/src/assets/js/validation_login.js"></script>
 </body>
 </html>
-<script src="assets/js/validation.js"></script>
