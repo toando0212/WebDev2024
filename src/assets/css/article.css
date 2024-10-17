@@ -1,8 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0px;
-    background-color: #f4f4f4;
-   
+    background-color: #f4f4f4;  
 }
 
 .header {
@@ -20,53 +19,60 @@ body {
 }
 
 
-nav ul {
+.navbar ul {
     display: flex;
 }
 
-nav ul li {
+.navbar ul li {
     list-style: none;
     margin-left: 10px;
     margin-right: 10px;
 }
 
-nav ul li a {
+.navbar ul li a {
     color: white;
     font-size: 16px;
     text-decoration: none;
 }
 
-nav ul li a:hover {
+.navbar ul li a:hover {
     color: #ffcc00;
 }
 
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2rem;
+.main-content {
+    max-width: 1000px; 
+    margin: auto;
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-img {
+.main-content h2 {
+    font-size: 35px; 
+    text-align: center; 
+    margin-bottom: 20px; 
+    color: #333; 
+}
+
+.main-content img {
+    display: block; 
     width: 100%; 
-    height: auto; 
-    border-radius: 8px;
-    
+    margin-top: 20px ; 
+    border-radius: 10px; 
 }
 
-p {
-    line-height: 1.6;
-    font-size: 1rem;
-    color: #666;
-    max-width: 800px; /* Giới hạn chiều rộng của đoạn văn */
-    margin: 0 auto; /* Căn giữa đoạn văn */
+.main-content p {
+    font-size: 20px; 
+    color: #444; 
+    margin-bottom: 50px; 
 }
 
 .footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 5px;
     position: fixed;
-    bottom: 0;
+    bottom: 0px;
     width: 100%;
 }

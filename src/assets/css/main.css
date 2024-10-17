@@ -9,7 +9,6 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #333;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo h1 a {
@@ -18,25 +17,23 @@ body {
     font-size: 25px;
 }
 
-
-/* Navigation Menu */
-nav ul {
+.navbar ul {
     display: flex;
 }
 
-nav ul li {
+.navbar ul li {
     list-style: none;
     margin-left: 10px;
     margin-right: 10px;
 }
 
-nav ul li a {
+.navbar ul li a {
     color: white;
     font-size: 16px;
     text-decoration: none;
 }
 
-nav ul li a:hover {
+.navbar ul li a:hover {
     color: #ffcc00;
 }
 
@@ -48,7 +45,6 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    max-width: 1200px;
     margin-left: 0;
 }
 
@@ -71,6 +67,7 @@ nav ul li a:hover {
 
 .topics ul li {
     margin-bottom: 10px;
+    margin-left: -50px;
 }
 
 .topics ul li a {
@@ -79,8 +76,7 @@ nav ul li a:hover {
     color: #333;
     display: block;
     padding: 10px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+    
 }
 
 .topics ul li a:hover {
@@ -91,10 +87,11 @@ nav ul li a:hover {
 /* Latest News Section - Align right */
 .latest-news {
     border-radius: 8px;
+    margin-left: 90px;
 }
 
 .latest-news h2 {
-    font-size: 2rem;
+    font-size: 30px;
     margin-bottom: 20px;
 }
 
@@ -111,27 +108,21 @@ nav ul li a:hover {
 .news-article img {
     width: 200px; 
     height: 120px;
-    object-fit: cover; /* Đảm bảo ảnh vừa khít vào khung mà không bị méo */
     border-radius: 8px;
     margin-right: 20px;
     flex-shrink: 0; /* Ngăn hình ảnh bị co khi nội dung nhiều hơn */
 }
 
-.news-article-content {
-    flex-grow: 1; /* Đảm bảo phần nội dung chiếm hết khoảng trống còn lại */
-}
 
 .news-article h3 {
     font-size: 25px;
     margin-bottom: 10px;
-    margin-top: 0; /* Đảm bảo title bắt đầu thẳng hàng */
-    line-height: 1.2;
+    margin-top: 0px; 
 }
 
 .news-article a {
     text-decoration: none;
-    color: #333;
-    transition: color 0.3s ease;
+    color: black;
 }
 
 .news-article a:hover {
@@ -139,22 +130,17 @@ nav ul li a:hover {
 }
 
 .news-article p {
-    font-size: 1rem;
+    margin-left: 15px;
+    font-size: 15px;
     color: #666;
-    line-height: 1.6;
-    margin-top: 5px;
-    margin-bottom: 0; /* Đảm bảo không có khoảng trống không cần thiết dưới description */
-    display: -webkit-box; /* Giới hạn dòng mô tả */
-    overflow: hidden;
-    text-overflow: ellipsis;
+    margin-top: 0px;
 }
 
 .footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 5px;
     position: fixed;
-    bottom: 0;
+    bottom: 0px;
     width: 100%;
 }

@@ -21,74 +21,77 @@ body {
 }
 
 
-nav ul {
+.navbar ul {
     display: flex;
 }
 
-nav ul li {
+.navbar ul li {
     list-style: none;
     margin-left: 10px;
     margin-right: 10px;
 }
 
-nav ul li a {
+.navbar ul li a {
     color: white;
     font-size: 16px;
     text-decoration: none;
 }
 
-nav ul li a:hover {
+.navbar ul li a:hover {
     color: #ffcc00;
 }
 
-h2 {
+.main-content h2 {
     text-align: center;
     margin-top: 20px; 
-    font-size: 2rem; 
+    font-size: 35px; 
 }
 
 .news-article {
     display: flex;
+    flex-direction: row; /* Đảm bảo hình ảnh và nội dung hiển thị theo hàng ngang */
     align-items: flex-start; 
     margin-bottom: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid #ccc;
 }
 
-img {
-    width: 100%; 
-    height: auto; 
+.news-article img {
+    width: 200px; 
+    height: 130px; 
     border-radius: 8px;
-   
+    margin-right: 20px; 
+    flex-shrink: 0; /* Ngăn hình ảnh bị co khi nội dung nhiều hơn */
+    
 }   
 
 .news-article h3 {
-    font-size: 1.5rem; /* Kích thước chữ cho tiêu đề bài báo */
-    margin-bottom: 10px; /* Khoảng cách dưới tiêu đề */
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 0px; 
 }
 
 .news-article a {
-    text-decoration: none; /* Bỏ gạch chân cho tiêu đề bài báo */
-    color: #333; /* Màu chữ cho tiêu đề */
-    transition: color 0.3s ease; /* Hiệu ứng chuyển màu chữ khi hover */
+    text-decoration: none;
+    color: black;
 }
 
 .news-article a:hover {
-    color: #007BFF; /* Màu chữ khi hover */
+    color: #ffcc00;
 }
 
 .news-article p {
-    font-size: 1rem; /* Kích thước chữ cho mô tả bài báo */
-    color: #666; /* Màu chữ cho mô tả */
-    line-height: 1.6; /* Khoảng cách dòng cho mô tả */
+    margin-left: 15px;
+    font-size: 15px;
+    color: #666;
+    margin-top: 0px;
 }
 
 .footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 5px;
     position: fixed;
-    bottom: 0;
+    bottom: 0px;
     width: 100%;
 }
