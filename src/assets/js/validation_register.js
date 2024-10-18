@@ -28,7 +28,6 @@ document.querySelector('.register-form').addEventListener('submit', function(eve
         alert('Passwords do not match.');
         return;
     }
-    
 
     alert('Register successful!');
     window.location.href = "main.html"
